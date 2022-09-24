@@ -1,0 +1,703 @@
+/* Box Model Hack */
+* {
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 62.5%;
+	font-family: Calibri, "Trebuchet MS", sans-serif;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+	content: ".";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	line-height: 0;
+	height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+	margin: 0;
+	padding: 0;
+}
+
+ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+/* hero background */
+
+.herobackground {
+	background: top/cover no-repeat url("../Assets/1.png");
+	min-height: 100vh;
+}
+
+/* header */
+
+header {
+	padding: 25px 50px;
+	text-align: right;
+}
+
+header > nav {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+header > nav > ul > li {
+	display: inline-block;
+	margin: 0px 15px;
+}
+
+header > nav > ul > li > a {
+	color: black;
+	text-decoration: none;
+	font-size: 2em;
+}
+
+header > nav > ul > li > a:hover {
+	text-decoration: underline;
+}
+
+header > i {
+	font-family: "FontAwesome" !important;
+	font-size: 2.5em;
+	vertical-align: middle;
+	-webkit-text-stroke: 0.5px white;
+	margin-right: 30px;
+	cursor: pointer;
+}
+
+header > i:hover {
+	font-size: 2.7em;
+}
+
+/* end of header */
+
+/* hero content */
+
+.hero {
+	width: 50%;
+	padding: 30px 100px;
+}
+
+.hero > h1 {
+	font-size: 6em;
+}
+
+.hero > form > i {
+	font-family: "fontawesome";
+	position: absolute;
+	padding: 15.3px 10px 10px 14px;
+	color: lightgrey;
+	font-size: 2em;
+}
+
+.hero > form > input {
+	height: 50px;
+	width: 70%;
+	border-radius: 4px;
+	border: solid 3px lightgrey;
+	border-top-right-radius: 0;
+	border-bottom-right-radius: 0;
+	border-right: none;
+	font-size: 2em;
+	padding-left: 40px;
+}
+
+.hero > form > input:focus {
+	outline: none;
+	border: solid 3px grey;
+}
+
+.hero > form > button {
+	background: orange;
+	width: 29%;
+	border: solid 3px orange;
+	height: 50px;
+	color: white;
+	font-weight: normal;
+	border-top-right-radius: 4px;
+	border-bottom-right-radius: 4px;
+	display: inline-block;
+	margin-left: -3px;
+	font-size: 2em;
+	cursor: pointer;
+}
+
+.hero > form > button > i {
+	margin-top: -5px;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.hero ul {
+	margin-top: 40px;
+	font-size: 2em;
+}
+
+.hero > ul > li {
+	display: inline-block;
+	margin: 0px 15px;
+}
+
+.hero > ul > li > i {
+	color: orange;
+}
+
+/* end of hero section */
+
+/* start of about section */
+
+.about {
+	background: top/cover no-repeat url("../Assets/2back.jpg");
+	min-height: 100vh;
+}
+
+.about .wrapper {
+	margin-left: 38%;
+	margin-right: 20%;
+	padding-top: 100px;
+}
+
+.about .wrapper span {
+	color: darkorange;
+	font-size: 2em;
+}
+.about .wrapper h2 {
+	font-size: 4em;
+	margin: 0;
+	padding: 10px 0;
+}
+
+.about .wrapper p {
+	font-size: 1.7em;
+}
+
+.about .wrapper a {
+	color: white;
+	text-decoration: none;
+	font-size: 1.7em;
+	background: darkorange;
+	padding: 15px;
+	margin: 20px 0;
+	display: inline-block;
+	border-bottom-left-radius: 5px;
+	border-top-left-radius: 5px;
+}
+
+.about .wrapper a:hover {
+	background: orange;
+}
+
+.about .wrapper a:nth-child(6) {
+	border-bottom-left-radius: 0px;
+	border-top-left-radius: 0px;
+	border-bottom-right-radius: 5px;
+	border-top-right-radius: 5px;
+	background: orange;
+	margin-left: -3px;
+}
+
+/* end of about section */
+/* start of order now section */
+
+.ordernow {
+	text-align: center;
+	padding: 50px 50px;
+	min-height: 100vh;
+}
+
+.ordernow > span {
+	font-size: 2em;
+	color: darkorange;
+}
+
+.ordernow > h2 {
+	font-size: 4em;
+	padding: 0;
+	margin: 20px 0;
+}
+
+.ordernow > .types li {
+	display: inline-block;
+	margin-top: 10px;
+}
+
+.ordernow > .types li > a {
+	display: inline-block;
+	padding: 10px 20px;
+	color: black;
+	text-decoration: none;
+	font-size: 2em;
+	border-bottom: solid 1px grey;
+}
+
+.ordernow > .types li > a:hover {
+	color: orange;
+	border-bottom: solid 1px orange;
+}
+
+.ordernow > .types li > a.selected {
+	color: darkorange;
+	border-bottom: solid 1px darkorange;
+}
+
+.ordernow > .dishes {
+	margin-top: 50px;
+}
+
+.ordernow > .dishes li {
+	display: inline-block;
+	height: 300px;
+	width: 220px;
+	margin: 0 20px;
+	background: center/cover no-repeat url("../Assets/3.png");
+}
+
+.ordernow > .dishes li:nth-child(2) {
+	background: center/cover no-repeat url("../Assets/5.png");
+}
+.ordernow > .dishes li:nth-child(3) {
+	background: center/cover no-repeat url("../Assets/6.png");
+}
+.ordernow > .dishes li:nth-child(4) {
+	background: center/cover no-repeat url("../Assets/7.png");
+}
+
+.ordernow > .dishes li > .cruisine--info {
+	display: none;
+}
+
+.ordernow span:last-child {
+	display: block;
+	padding-top: 30px;
+}
+
+.ordernow span:last-child > i {
+	font-size: 0.3em;
+	color: rgb(255, 209, 123);
+	display: inline-block;
+	margin-right: 3px;
+}
+
+.ordernow span:last-child > i.selected {
+	font-size: 0.5em;
+	color: orange;
+}
+
+/* end of order now section */
+/* start of opening hours section */
+
+.openingHours {
+	text-align: center;
+	min-height: 130vh;
+	background: top/cover no-repeat url(../Assets/3.png);
+}
+
+.openingHours > .wrapper {
+	padding: 50px 50px;
+	height: 100%;
+	width: 100%;
+	background: rgba(255, 255, 255, 0.79);
+}
+
+.openingHours .wrapper > span {
+	font-size: 2em;
+	color: orange;
+}
+
+.openingHours .wrapper > h2 {
+	font-size: 4em;
+	padding: 0;
+	margin: 10px 0;
+}
+
+.openingHours .wrapper .contact {
+	padding: 20px 0;
+}
+
+.openingHours .wrapper .contact * {
+	display: block;
+}
+
+.openingHours .wrapper .contact span:first-child {
+	color: darkorange;
+	height: 30px;
+	width: 30px;
+	padding: 20px;
+	margin: 0 auto;
+	margin-bottom: 10px;
+	font-size: 2.2em;
+	border-radius: 100%;
+	border: solid 1px orange;
+}
+
+.openingHours .wrapper .contact span:first-child i {
+	margin-left: -11px;
+	margin-top: -10px;
+}
+
+.openingHours .wrapper .contact span:nth-child(2) {
+	font-size: 1.7em;
+	margin-bottom: 5px;
+}
+
+.openingHours .wrapper .contact span:nth-child(3) {
+	font-size: 2em;
+	color: darkorange;
+}
+
+.openingHours .timings section {
+	display: inline-block;
+	text-align: left;
+	margin: 0 70px;
+}
+
+.openingHours .timings section * {
+	display: block;
+}
+
+.openingHours .timings section span {
+	font-size: 1.7em;
+	margin-bottom: 4px;
+}
+
+.openingHours .timings section time {
+	font-size: 2em;
+}
+
+.openingHours .carousal {
+	padding: 40px 0;
+}
+
+.openingHours .carousal * {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.openingHours .carousal .container {
+	width: 20%;
+}
+
+.openingHours .carousal .container span {
+	color: darkorange;
+	height: 30px;
+	width: 30px;
+	padding: 20px;
+	margin: 0 auto;
+	margin-bottom: 10px;
+	font-size: 2.2em;
+	border-radius: 100%;
+	border: solid 1px orange;
+	cursor: pointer;
+}
+
+.openingHours .carousal .container span i {
+	margin-left: -6px;
+	margin-top: -28px;
+}
+
+.openingHours .carousal .img {
+	height: 400px;
+	width: 50%;
+	background: center/cover no-repeat url("../Assets/8.png");
+}
+
+.openingHours .carousal .img .container {
+	height: 100%;
+	width: 100%;
+}
+
+.openingHours .carousal .img .container span {
+	color: darkorange;
+	height: 100px;
+	width: 100px;
+	padding: 20px;
+	margin: 150px auto;
+	font-size: 5em;
+	border-radius: 100%;
+	border: solid 3px orange;
+	cursor: pointer;
+}
+
+.openingHours .carousal .img .container span i {
+	margin-top: -10px;
+	margin-left: 9px;
+}
+
+/* end of opening hours section */
+/* start of testimonials section */
+
+.testimonials {
+	text-align: center;
+	padding-top: 50px;
+	min-height: 100vh;
+}
+
+.testimonials > span:first-child {
+	font-size: 2em;
+	color: orange;
+}
+
+.testimonials h2 {
+	font-size: 4em;
+	padding: 0;
+	margin: 10px 0;
+}
+.testimonials img {
+	border-radius: 100%;
+	margin-top: 30px;
+	height: 80px;
+}
+
+.testimonials h4 {
+	font-size: 2.4em;
+	font-weight: normal;
+	margin: 10px 0;
+	margin-bottom: 3px;
+}
+
+.testimonials span:nth-child(5) {
+	font-size: 1.4em;
+	color: grey;
+	display: block;
+}
+
+.testimonials span:nth-child(6) i {
+	font-size: 1.4em;
+	color: orange;
+	display: inline-block;
+	margin-right: 3px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.testimonials > p {
+	font-size: 2em;
+	padding: 0 20%;
+}
+
+.testimonials span:last-child i {
+	font-size: 0.5rem;
+	color: rgb(255, 209, 123);
+	display: inline-block;
+	margin-right: 5px;
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+
+.testimonials span:last-child i.selected {
+	font-size: 0.8rem;
+	color: orange;
+}
+
+/* end of testimonials section */
+
+/* footer */
+footer {
+	background: black;
+}
+
+footer > p {
+	padding: 20px 5px;
+	color: white;
+	font-size: 1.5em;
+	margin: 0;
+	text-align: center;
+}
+
+/* end of footer */
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+
+@media screen and (max-width: 1200px) {
+	.hero {
+		width: 60%;
+	}
+
+	.hero h1 {
+		width: 90%;
+	}
+
+	.ordernow > .dishes li {
+		margin: 20px 20px;
+	}
+}
+
+@media screen and (max-width: 1000px) {
+	header {
+		padding: 25px 25px;
+	}
+
+	.hero {
+		width: 60%;
+		padding: 30px 50px;
+	}
+
+	.openingHours .carousal .container {
+		width: 10%;
+	}
+
+	.openingHours .carousal .img {
+		width: 70%;
+	}
+}
+
+@media screen and (max-width: 800px) {
+	header {
+		text-align: center;
+		padding: 10px 10px;
+	}
+
+	header > nav {
+		display: block;
+		margin-bottom: 20px;
+	}
+
+	header > nav > ul > li {
+		display: inline-block;
+		margin: 0 15px;
+		margin-top: 20px;
+	}
+
+	header > i:last-child {
+		margin-right: 0px;
+	}
+
+	.hero {
+		width: 70%;
+		padding: 20px 50px;
+	}
+
+	.hero h1 {
+		font-size: 5.5em;
+	}
+
+	.hero > form > input {
+		border: solid 3px lightgrey;
+		border-radius: 4px;
+		width: 90%;
+	}
+
+	.hero > form > button {
+		display: block;
+		margin-top: 20px;
+		width: 90%;
+		text-align: center;
+		border-radius: 4px;
+	}
+
+	.hero ul {
+		margin-top: 50px;
+	}
+
+	.about .wrapper {
+		margin-left: 33%;
+		margin-right: 15%;
+	}
+
+	.ordernow {
+		padding: 50px 0;
+	}
+
+	.openingHours .timings section {
+		margin: 0 50px;
+	}
+
+	.ordernow .dishes {
+		padding: 0 40px;
+	}
+
+	.openingHours > .wrapper {
+		padding: 50px 0px;
+	}
+
+	.openingHours .carousal .container {
+		width: 10%;
+	}
+
+	.openingHours .carousal .img {
+		width: 75%;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.hero {
+		width: 100%;
+		text-align: center;
+		padding: 10px 70px;
+	}
+
+	.hero h1 {
+		font-size: 5em;
+		padding-right: 0;
+		width: 100%;
+	}
+
+	.hero > form > input {
+		width: 100%;
+	}
+
+	.hero > form > button {
+		width: 100%;
+	}
+
+	.about .wrapper {
+		margin-left: 28%;
+		margin-right: 10%;
+		padding-top: 50px;
+	}
+
+	.ordernow .dishes {
+		padding: 0 10px;
+	}
+
+	.openingHours .timings section {
+		margin: 10px 50px;
+	}
+
+	.testimonials p {
+		padding: 0 10%;
+	}
+}
+
+@media screen and (max-width: 450px) {
+	.hero {
+		padding: 10px 10%;
+	}
+
+	.hero h1 {
+		font-size: 4.5em;
+		margin: 20px 0;
+	}
+
+	.about .wrapper {
+		margin-left: 10%;
+		margin-right: 10%;
+		padding-top: 50px;
+	}
+
+	.hero > ul > li {
+		margin: 0px 5px;
+		margin-bottom: 20px;
+	}
+}
