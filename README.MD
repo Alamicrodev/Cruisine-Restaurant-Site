@@ -1,6 +1,6 @@
-# Cruisine Restaurant SITE: [Visit Here] ()
+# Cruisine Restaurant SITE: [Visit Here](https://cruisinerestaurant.netlify.app/)
 
-A single page responsive site for a Cruisine Restaurant. Design taken from the picture/wireframe provided below. All the layout is completed using floats or inline-block and without using css grid or flexbox. The site is available online for visit [here] ()
+A single page responsive site for a Cruisine Restaurant. Design taken from the picture/wireframe provided below. All the layout is completed using floats or inline-block and without using css grid or flexbox. The site is available online for visit [here](https://cruisinerestaurant.netlify.app/)
 
 
 ### Purpose:
